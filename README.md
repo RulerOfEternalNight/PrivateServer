@@ -1,7 +1,7 @@
 # Server NAS and Compute
 
 ## Plan
-![How_it_looks](https://raw.githubusercontent.com/Jegadit/PrivateServer/master/res/Server%20Prototype%20BP.png)
+![How_it_looks](https://raw.githubusercontent.com/Jegadit/PrivateServer/master/res/Server%20Prototype%20BPv1.png)
 
 
 ## Part 1:
