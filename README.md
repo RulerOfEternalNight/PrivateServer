@@ -18,7 +18,7 @@ CMDs:
 - sudo -i => get into root mode
 - adduser stack
 - echo "stack ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-- checkout ![ref](https://www.youtube.com/watch?v=1uyQUU3gXZo&list=PLrDUa_jmF4dFFKl2buxRxWaBDNSeLVJzh&index=5&t=1702s) for network setup
+- checkout [ref](https://www.youtube.com/watch?v=1uyQUU3gXZo&list=PLrDUa_jmF4dFFKl2buxRxWaBDNSeLVJzh&index=5&t=1702s) for network setup
 - timedatectl set-timezone Asia/Kolkata
 - apt update && apt upgrade -y
 
