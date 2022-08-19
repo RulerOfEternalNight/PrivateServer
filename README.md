@@ -9,10 +9,9 @@
 Either Proxmox or OpenStack
 
 <b>OpenStack: </b> 
-
-Host os: ubuntu-20.04.3-desktop-amd64
-RAM alloted: 4GB
-Storage disk space alloted: 25GB
+Host os: ubuntu-20.04.3-desktop-amd64 <br/>
+RAM alloted: 4GB <br/>
+Storage disk space alloted: 25GB <br/>
 
 CMDs:
 - sudo -i => get into root mode
@@ -34,4 +33,4 @@ CMDs:
 ## Part 2:
 #### Building an image with the source codes and running it:
 - docker build -t webapp .
-- docker run -d -p 80:5000 --name Cloud_OS webapp
+- docker run -d -p 80:5000 --name HiddenLeaf webapp
