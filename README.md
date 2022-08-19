@@ -10,7 +10,26 @@ Either Proxmox or OpenStack
 
 <b>OpenStack: </b> 
 
-- needed: local.config
+Host os: ubuntu-20.04.3-desktop-amd64
+RAM alloted: 4GB
+Storage disk space alloted: 25GB
+
+CMDs:
+- sudo -i => get into root mode
+- adduser stack
+- echo "stack ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+- checkout ![ref](https://www.youtube.com/watch?v=1uyQUU3gXZo&list=PLrDUa_jmF4dFFKl2buxRxWaBDNSeLVJzh&index=5&t=1702s) for network setup
+- timedatectl set-timezone Asia/Kolkata
+- apt update && apt upgrade -y
+
+- su stack
+- cd ~
+- git clone https://opendev.org/openstack/devstack -b stable/victoria
+- create and write the contents of local.conf in devstack directory
+    - set passwords
+    - set Host IP
+- apt install ntp
+- run : ./stack.sh
 
 ## Part 2:
 #### Building an image with the source codes and running it:
