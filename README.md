@@ -44,7 +44,7 @@ CMDs:
 - In order to send files to the server to do external processing(heavy lifting work) and to get back the results/output.
 - Can be used to upload and retrive media files like a NAS.
 
-```NGROK can be used to access this publically from outside the network```
+```NGROK can be used to access this publicaly from outside the network```
 
 ## Part n:
 #### Building an image with the source codes and running it:
