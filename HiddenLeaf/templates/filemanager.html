@@ -3,16 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - bootstrap file explorer</title>
+    <title>Bootstrap file explorer</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style_fm.css')}}">
 
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
     <script src="https://kit.fontawesome.com/155918c9ff.js" crossorigin="anonymous"></script>
-    <!-- fontawesome path ^ blazor may already have it built in -->
 
     <div class="container" style="max-width:100%;padding:0;">
         <div class="row">
@@ -41,7 +39,6 @@
                                 <li class="active sub2"><a href=""><i class="fa fa-folder"></i> Books</a></li>
                                 <li class="sub3"><a href=""><i class="fa fa-folder"></i> Comic Books</a></li>
                                 <li class="sub1"><a href=""><i class="fa fa-folder"></i> 2019</a></li>
-                                <!-- I have css for sub1-sub5 but it's easy to make more -->
                             </ul>
                             <div class="clearfix"></div>
                         </div>
@@ -363,7 +360,6 @@
             </div>
         </div>
     </div>
-    <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src="{{ url_for('static', filename='js/script_fm.js')}}"></script>
 

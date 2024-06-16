@@ -5,7 +5,7 @@ from textwrap import indent
 app = Flask(__name__)
 
 app.secret_key = 'AshbornIsLegend'
-folder_path = r'C:\Users\Jegadit\Desktop\root\pah\works\html\org\cloud-os\resources'
+folder_path = 'C:/Users/Jegadit/Desktop/root/pah/works/html/org/cloud-os/resources'
 fileandfolder = {}
 
 
@@ -73,14 +73,25 @@ def verifyUser(user, passwd):
 def mediaFolder():
     if "user" in session:
         return render_template("filemanager.html", media=fileandfolder)
+    else:
+        return redirect(url_for("login"))
 
 
 @app.route("/user")
 def user():
     if 'user' in session:
-        filesAndFolder()
+        # filesAndFolder()
         user = session['user']
         return render_template("os.html", usr=user, media=json.dumps(fileandfolder, indent=4))
+    else:
+        return redirect(url_for("login"))
+
+
+@app.route('/IOT')
+def iot():
+    if 'user' in session:
+        user = session['user']
+        return render_template('table.html', finalresult=[1, 1, 1, 1], sizeofresult=[1, 1, 1, 1].__len__(), phone=[1, 1, 1, 1], phoneSize=[1, 1, 1, 1].__len__(), uniqueSize=[1, 1, 1, 1].__len__(), unique=[1, 1, 1, 1])
     else:
         return redirect(url_for("login"))
 
@@ -88,6 +99,10 @@ def user():
 @app.route("/status")
 def status():
     return jsonify(status="active")
+
+@app.route("/live")
+def live():
+    return redirect('http://192.168.137.36:8080/')
 
 
 @app.route("/logout")
